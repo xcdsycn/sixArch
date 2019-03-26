@@ -1,6 +1,6 @@
-package com.lxh.service.six.exception;
+package com.lxh.six.exception;
 
-import com.lxh.service.six.enums.ErrorCodeEnum;
+import com.lxh.six.enums.ErrorCodeEnum;
 import lombok.Data;
 
 @Data

@@ -1,4 +1,4 @@
-package com.lxh.service.six.constants;
+package com.lxh.six.constants;
 
 public class Constant {
 

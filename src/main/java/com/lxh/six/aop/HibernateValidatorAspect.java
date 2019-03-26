@@ -1,7 +1,7 @@
-package com.lxh.service.six.aop;
+package com.lxh.six.aop;
 
-import com.lxh.service.six.dto.Result;
-import com.lxh.service.six.enums.ErrorCodeEnum;
+import com.lxh.six.dto.Result;
+import com.lxh.six.enums.ErrorCodeEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;

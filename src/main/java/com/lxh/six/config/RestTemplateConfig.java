@@ -1,4 +1,4 @@
-package com.lxh.service.six.config;
+package com.lxh.six.config;
 
 import org.apache.http.conn.ssl.NoopHostnameVerifier;
 import org.apache.http.conn.ssl.SSLConnectionSocketFactory;

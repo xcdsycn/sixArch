@@ -1,4 +1,4 @@
-package com.lxh.service.six.config;
+package com.lxh.six.config;
 
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Value;

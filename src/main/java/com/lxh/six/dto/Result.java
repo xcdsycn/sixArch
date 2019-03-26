@@ -1,7 +1,7 @@
-package com.lxh.service.six.dto;
+package com.lxh.six.dto;
 
 
-import com.lxh.service.six.enums.ErrorCodeEnum;
+import com.lxh.six.enums.ErrorCodeEnum;
 import lombok.Data;
 
 import java.io.Serializable;

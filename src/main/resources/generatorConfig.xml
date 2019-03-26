@@ -21,17 +21,17 @@
                         password="123"/>
 
 
-        <javaModelGenerator targetPackage="com.lxh.service.six.entity" targetProject="./src/main/java"/>
+        <javaModelGenerator targetPackage="com.lxh.six.entity" targetProject="./src/main/java"/>
 
         <sqlMapGenerator targetPackage="mapper" targetProject="./src/main/resources">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
-        <javaClientGenerator targetPackage="com.lxh.service.six.dao"
+        <javaClientGenerator targetPackage="com.lxh.six.dao"
                              targetProject="./src/main/java"
                              type="XMLMAPPER"/>
 
-        <table schema="" tableName="test">
+        <table schema="test" tableName="employee">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>
 

@@ -1,4 +1,4 @@
-package com.lxh.service.six.enums;
+package com.lxh.six.enums;
 
 import lombok.Getter;
 

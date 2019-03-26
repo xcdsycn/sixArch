@@ -1,4 +1,4 @@
-package com.lxh.service.six.config;
+package com.lxh.six.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

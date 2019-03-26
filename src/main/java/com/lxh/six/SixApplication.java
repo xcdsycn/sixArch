@@ -1,4 +1,4 @@
-package com.lxh.service.six;
+package com.lxh.six;
 
 import com.github.pagehelper.PageHelper;
 import org.springframework.boot.SpringApplication;

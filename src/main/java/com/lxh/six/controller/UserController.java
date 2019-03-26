@@ -1,6 +1,6 @@
-package com.lxh.service.six.controller;
+package com.lxh.six.controller;
 
-import com.lxh.service.six.dto.Result;
+import com.lxh.six.dto.Result;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
