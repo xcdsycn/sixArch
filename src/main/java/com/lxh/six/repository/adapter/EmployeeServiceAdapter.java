@@ -1,12 +1,12 @@
-package com.lxh.six.dao.adapter;
+package com.lxh.six.repository.adapter;
 
 import com.lxh.six.dao.EmployeeMapper;
-import com.lxh.six.dao.EmployeeRepositoryPort;
+import com.lxh.six.repository.EmployeeRepositoryPort;
 import com.lxh.six.entity.Employee;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.PersistenceContext;
 
 /**
  * @author lxh
@@ -14,7 +14,7 @@ import javax.persistence.PersistenceContext;
 @Service
 public class EmployeeServiceAdapter implements EmployeeRepositoryPort {
 
-    @PersistenceContext
+    @Autowired
     private EmployeeMapper employeeMapper;
 
     @Transactional(rollbackFor = Exception.class)

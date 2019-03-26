@@ -1,6 +1,6 @@
 package com.lxh.six.service;
 
-import com.lxh.six.dao.EmployeeRepositoryPort;
+import com.lxh.six.repository.EmployeeRepositoryPort;
 import com.lxh.six.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

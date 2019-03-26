@@ -1,4 +1,4 @@
-package com.lxh.six.dao;
+package com.lxh.six.repository;
 
 import com.lxh.six.entity.Employee;
 
