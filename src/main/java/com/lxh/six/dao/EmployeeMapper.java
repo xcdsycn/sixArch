@@ -1,7 +1,7 @@
 package com.lxh.six.dao;
 
-import com.lxh.six.entity.Employee;
-import com.lxh.six.entity.EmployeeExample;
+import com.lxh.six.domain.Employee;
+import com.lxh.six.domain.EmployeeExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;

@@ -1,7 +1,7 @@
-package com.lxh.six.controller;
+package com.lxh.six.adapter;
 
-import com.lxh.six.controller.port.EmployeeUIPort;
-import com.lxh.six.entity.Employee;
+import com.lxh.six.port.EmployeeUiPort;
+import com.lxh.six.domain.Employee;
 import com.lxh.six.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,9 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @author lxh
  */
+
 @RestController
 @RequestMapping("/employees/")
-public class EmployeeControllerAdapter implements EmployeeUIPort {
+public class EmployeeControllerAdapter implements EmployeeUiPort {
     @Autowired
     private EmployeeService employeeService;
 

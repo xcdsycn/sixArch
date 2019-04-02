@@ -1,7 +1,7 @@
 package com.lxh.six.controller;
 
-import com.lxh.six.entity.Employee;
-import com.lxh.six.repository.EmployeeRepositoryPort;
+import com.lxh.six.domain.Employee;
+import com.lxh.six.port.EmployeeRepositoryPort;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

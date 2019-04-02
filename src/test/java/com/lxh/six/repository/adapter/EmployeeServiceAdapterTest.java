@@ -1,11 +1,9 @@
 package com.lxh.six.repository.adapter;
 
 import com.lxh.service.six.service.AbstractTestBase;
-import com.lxh.six.repository.EmployeeRepositoryPort;
+import com.lxh.six.port.EmployeeRepositoryPort;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import static org.junit.Assert.*;
 
 public class EmployeeServiceAdapterTest extends AbstractTestBase {
 

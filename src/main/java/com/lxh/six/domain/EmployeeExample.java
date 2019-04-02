@@ -1,4 +1,4 @@
-package com.lxh.six.entity;
+package com.lxh.six.domain;
 
 import java.util.ArrayList;
 import java.util.List;

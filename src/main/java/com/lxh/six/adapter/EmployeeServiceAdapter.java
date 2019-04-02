@@ -1,8 +1,8 @@
-package com.lxh.six.repository.adapter;
+package com.lxh.six.adapter;
 
 import com.lxh.six.dao.EmployeeMapper;
-import com.lxh.six.repository.EmployeeRepositoryPort;
-import com.lxh.six.entity.Employee;
+import com.lxh.six.port.EmployeeRepositoryPort;
+import com.lxh.six.domain.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

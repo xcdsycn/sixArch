@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lxh.six.dao.EmployeeMapper">
-  <resultMap id="BaseResultMap" type="com.lxh.six.entity.Employee">
+  <resultMap id="BaseResultMap" type="com.lxh.six.domain.Employee">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="role" jdbcType="VARCHAR" property="role" />
@@ -68,7 +68,7 @@
   <sql id="Base_Column_List">
     id, name, role, salary
   </sql>
-  <select id="selectByExample" parameterType="com.lxh.six.entity.EmployeeExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.lxh.six.domain.EmployeeExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -92,13 +92,13 @@
     delete from employee
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="com.lxh.six.entity.EmployeeExample">
+  <delete id="deleteByExample" parameterType="com.lxh.six.domain.EmployeeExample">
     delete from employee
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.lxh.six.entity.Employee">
+  <insert id="insert" parameterType="com.lxh.six.domain.Employee">
     <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
       SELECT LAST_INSERT_ID()
     </selectKey>
@@ -107,7 +107,7 @@
     values (#{name,jdbcType=VARCHAR}, #{role,jdbcType=VARCHAR}, #{salary,jdbcType=BIGINT}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.lxh.six.entity.Employee">
+  <insert id="insertSelective" parameterType="com.lxh.six.domain.Employee">
     <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
       SELECT LAST_INSERT_ID()
     </selectKey>
@@ -135,7 +135,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.lxh.six.entity.EmployeeExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="com.lxh.six.domain.EmployeeExample" resultType="java.lang.Long">
     select count(*) from employee
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
@@ -171,7 +171,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.lxh.six.entity.Employee">
+  <update id="updateByPrimaryKeySelective" parameterType="com.lxh.six.domain.Employee">
     update employee
     <set>
       <if test="name != null">
@@ -186,14 +186,14 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.lxh.six.entity.Employee">
+  <update id="updateByPrimaryKey" parameterType="com.lxh.six.domain.Employee">
     update employee
     set name = #{name,jdbcType=VARCHAR},
       role = #{role,jdbcType=VARCHAR},
       salary = #{salary,jdbcType=BIGINT}
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <select id="selectByExampleWithRowbounds" parameterType="com.lxh.six.entity.EmployeeExample" resultMap="BaseResultMap">
+  <select id="selectByExampleWithRowbounds" parameterType="com.lxh.six.domain.EmployeeExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct

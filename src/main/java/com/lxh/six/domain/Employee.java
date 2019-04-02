@@ -1,4 +1,4 @@
-package com.lxh.six.entity;
+package com.lxh.six.domain;
 
 public class Employee {
     private Integer id;

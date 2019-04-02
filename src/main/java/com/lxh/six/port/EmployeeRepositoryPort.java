@@ -1,6 +1,6 @@
-package com.lxh.six.repository;
+package com.lxh.six.port;
 
-import com.lxh.six.entity.Employee;
+import com.lxh.six.domain.Employee;
 
 public interface EmployeeRepositoryPort {
 
