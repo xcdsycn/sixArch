@@ -1,6 +1,11 @@
 package com.lxh.six.domain;
 
+import javax.persistence.*;
+
+@Table(name = "employee")
 public class Employee {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String name;
@@ -9,54 +14,58 @@ public class Employee {
 
     private Long salary;
 
+    /**
+     * @return id
+     */
     public Integer getId() {
         return id;
     }
 
-    public Employee withId(Integer id) {
-        this.setId(id);
-        return this;
-    }
-
+    /**
+     * @param id
+     */
     public void setId(Integer id) {
         this.id = id;
     }
 
+    /**
+     * @return name
+     */
     public String getName() {
         return name;
     }
 
-    public Employee withName(String name) {
-        this.setName(name);
-        return this;
-    }
-
+    /**
+     * @param name
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    /**
+     * @return role
+     */
     public String getRole() {
         return role;
     }
 
-    public Employee withRole(String role) {
-        this.setRole(role);
-        return this;
-    }
-
+    /**
+     * @param role
+     */
     public void setRole(String role) {
         this.role = role;
     }
 
+    /**
+     * @return salary
+     */
     public Long getSalary() {
         return salary;
     }
 
-    public Employee withSalary(Long salary) {
-        this.setSalary(salary);
-        return this;
-    }
-
+    /**
+     * @param salary
+     */
     public void setSalary(Long salary) {
         this.salary = salary;
     }
